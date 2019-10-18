@@ -8,20 +8,24 @@ a2 = 0.5;
 d1 = 0.4;
 d3 = 0.3; %Pieza prismatica
 d4 = 0.5; 
-
-for tita1 = 0.0:pi/8:pi
-    for tita2 = 0.0:pi/8:pi
+i=1;
+flechaDH(0,0,0,0);
+for tita1 = 0.0:pi/16:pi
+    for tita2 = 0.0:pi/16:pi
         for d3 = 0.0:1:1
-            for tita4 = 0.0:pi/8:pi  
-            Aux=eval(T);
-            posX=Aux(1,4);        %Eje x
-            posY=Aux(2,4);       %Eje y
-            posZ=Aux(3,4);        %Eje z
-            figure(1)
-            stem3(posX, posY, posZ)
-            grid on
-            hold on
+            for tita4 = 0.0:pi/16:pi  
+                Aux=eval(T);
+                posX(i)=Aux(1,4);        %Eje x
+                posY(i)=Aux(2,4);       %Eje y
+                posZ(i)=Aux(3,4);        %Eje z
+                figure(1)
+%                 stem3(posX(i), posY(i), posZ(i))
+%                 grid on
+%                 hold on
+                i=i+1;
             end
         end
     end
 end
+
+plot3(posX,posY,posZ);grid
