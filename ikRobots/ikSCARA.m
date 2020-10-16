@@ -1,9 +1,12 @@
 % https://web.archive.org/web/20160303204849/http://freespace.virgin.net/hugo.elias/models/m_ik2.htm
+% https://towardsdatascience.com/machine-learning-bit-by-bit-univariate-gradient-descent-9155731a9e30
+% https://towardsdatascience.com/machine-learning-bit-by-bit-multivariate-gradient-descent-e198fdd0df85
 % METODO DEL GRADIENTE PARA OBTENER IK DE ROBOT SCARA, EXPANDIBLE A
 % CUALQUIER ROBOT MODIFICANDO FUNCION COSTO Y AGREGANDO RESPECTIVOS
 % GRADIENTES Y ACTUALIZACIONES
 
-clc; clear all;
+clc; 
+clear all;
 % PUNTOS OBJETIVO
 % px=-0.7516;
 % py=0.5795;
